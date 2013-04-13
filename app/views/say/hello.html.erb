@@ -1,0 +1,18 @@
+<p>Hello, World!</p>
+
+<p>
+  This is the time:  <%= @time %>
+  <br /><br />
+  Say <a href="/say/goodbye">goodbye</a>
+  <br /><br />
+  Or <%= link_to("goodbye", say_goodbye_path) %>
+  <br /> <br />
+  
+  <!-- This file name thing could be useful for pulling back a list of
+  images or something from a directory, keep it in mind I guess -->
+  <%for file in @files%>
+    file name is: <%= file %>
+    <br />
+  <% end %>
+  
+</p>
